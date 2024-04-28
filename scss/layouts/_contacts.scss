@@ -1,0 +1,50 @@
+.contacts {
+    background-image: url(../images/idconcert2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .formulario {
+        @include grid(grid, 100%, center, center, 10px);
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 25px;
+    
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            label {
+                display: flex;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #ffffff;
+            }
+    
+            input,
+            textarea {
+                display: flex;
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #ccc;
+                font-size: 1rem;
+                border-radius: 18px;
+                resize: none;
+            }
+        }
+    
+        .btnformulario {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 18px;
+            font-size: 18px;
+        }
+    }
+}

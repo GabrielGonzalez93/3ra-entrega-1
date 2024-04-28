@@ -25,7 +25,13 @@ body::-webkit-scrollbar-track-piece {
     align-items: $align;
     gap: $gap;
 }
-
+@mixin grid($display,$width, $align, $justify, $gap){
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
 @mixin img($width, $height, $object){
     width: $width;
     height: $height;

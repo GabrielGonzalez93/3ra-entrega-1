@@ -42,6 +42,11 @@ footer .futer li {
   padding-right: 10px;
 }
 
+.COPY {
+  text-align: center;
+  color: antiquewhite;
+}
+
 header {
   width: 100%;
   height: 100%;
@@ -84,12 +89,6 @@ body h1 {
   font-size: xx-large;
 }
 body h2 {
-  color: white;
-}
-body h3 {
-  color: white;
-}
-body h4 {
   color: white;
 }
 body p {
@@ -220,68 +219,6 @@ main .hero-main img {
   height: 300px;
 }
 
-/* About */
-/* contacto */
-.contacts {
-  background-image: url(../images/idconcert2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.formulario {
-  display: grid;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 25px;
-}
-
-form div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-label {
-  display: flex;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #ffffff;
-}
-
-input, textarea {
-  display: flex;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
-  font-size: 1rem;
-  border-radius: 18px;
-  resize: none;
-}
-
-.btnformulario {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 18px;
-  font-size: 18px;
-}
-
-.COPY {
-  text-align: center;
-  color: antiquewhite;
-}
-
-/* musica */
 .musica {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -290,8 +227,7 @@ input, textarea {
   padding: 10px;
   gap: 5px;
 }
-
-.disc {
+.musica .disc {
   display: flex;
   background-color: rgba(16, 58, 196, 0.0666666667);
   flex-direction: column;
@@ -301,49 +237,90 @@ input, textarea {
   border: 2px solid rgba(16, 58, 196, 0.0666666667);
   border-radius: 30px;
 }
-
 @media (max-width: 800px) {
-  .musica {
+  .musica .musica {
     display: flex;
     flex-direction: column;
   }
 }
-.sp1 {
+.musica .sp1 {
   grid-area: disco1;
 }
-
-.sp2 {
+.musica .sp2 {
   grid-area: disco2;
 }
-
-.sp3 {
+.musica .sp3 {
   grid-area: disco3;
 }
-
-.sp4 {
+.musica .sp4 {
   grid-area: disco4;
 }
-
-.sp5 {
+.musica .sp5 {
   grid-area: disco5;
 }
-
-.sp6 {
+.musica .sp6 {
   grid-area: disco6;
 }
-
-.sp7 {
+.musica .sp7 {
   grid-area: disco7;
 }
-
-.sp8 {
+.musica .sp8 {
   grid-area: disco8;
 }
-
-.sp9 {
+.musica .sp9 {
   grid-area: disco9;
 }
 
+.contacts {
+  background-image: url(../images/idconcert2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contacts .formulario {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.contacts .formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+.contacts .formulario form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contacts .formulario form label {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.contacts .formulario form input,
+.contacts .formulario form textarea {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  border-radius: 18px;
+  resize: none;
+}
+.contacts .formulario .btnformulario {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 18px;
+  font-size: 18px;
+}
+
+/* musica */
 /* galeria */
 .galeria {
   display: flex;

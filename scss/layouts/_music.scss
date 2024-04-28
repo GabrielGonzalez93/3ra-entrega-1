@@ -1,0 +1,63 @@
+.musica {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'disco1 disco2 disco3'
+        'disco4 disco5 disco6'
+        'disco7 disco8 disco9';
+    padding: 10px;
+    gap: 5px;
+
+    .disc {
+        display: flex;
+        background-color: #103ac411;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 25px;
+        border: 2px solid #103ac411;
+        border-radius: 30px;
+    }
+    @media (max-width:800px) {
+        .musica {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .sp1 {
+        grid-area: disco1;
+    }
+    
+    .sp2 {
+        grid-area: disco2;
+    }
+    
+    .sp3 {
+        grid-area: disco3;
+    }
+    
+    .sp4 {
+        grid-area: disco4;
+    }
+    
+    .sp5 {
+        grid-area: disco5;
+    }
+    
+    .sp6 {
+        grid-area: disco6;
+    }
+    
+    .sp7 {
+        grid-area: disco7;
+    }
+    
+    .sp8 {
+        grid-area: disco8;
+    }
+    
+    .sp9 {
+        grid-area: disco9;
+    }
+}
