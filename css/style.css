@@ -219,21 +219,47 @@ main .hero-main img {
   height: 300px;
 }
 
+.titulomusic div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.titulomusic div h1 {
+  font-size: 1.5rem;
+  transition: 0.5s;
+  text-shadow: black;
+}
+.titulomusic div h1:hover {
+  transform: scale(1.4);
+  background: linear-gradient(to right, rgb(19, 19, 39), rgb(1, 2, 48));
+}
+.titulomusic div ul {
+  display: flex;
+  list-style: none;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  gap: 10px;
+}
+.titulomusic div ul li {
+  color: white;
+}
+
 .musica {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "disco1 disco2 disco3" "disco4 disco5 disco6" "disco7 disco8 disco9";
+  grid-template-areas: "disco1 disco2" "disco3 disco4" "disco5 disco6";
   padding: 10px;
   gap: 5px;
 }
 .musica .disc {
   display: flex;
-  background-color: rgba(16, 58, 196, 0.0666666667);
+  background: linear-gradient(55deg, black, rgba(3, 3, 71, 0.438));
   flex-direction: column;
   align-items: center;
-  padding: 15px;
-  gap: 25px;
+  padding: 10px;
+  gap: 10px;
   border: 2px solid rgba(16, 58, 196, 0.0666666667);
   border-radius: 30px;
 }
