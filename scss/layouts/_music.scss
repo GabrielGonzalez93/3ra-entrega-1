@@ -15,18 +15,6 @@
                 background:linear-gradient(to right, rgb(19, 19, 39), rgb(1, 2, 48));
             }
         }
-
-    ul {
-        display: flex;
-        list-style: none;
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
-        gap: 10px;
-
-        li {
-            color: white;
-        }
-    }
 }
 }
 
@@ -51,13 +39,6 @@
         gap: 10px;
         border: 2px solid #103ac411;
         border-radius: 30px;
-    }
-
-    @media (max-width:800px) {
-        .musica {
-            display: flex;
-            flex-direction: column;
-        }
     }
 
     .sp1 {

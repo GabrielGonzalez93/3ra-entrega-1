@@ -9,15 +9,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;
 }
 
-body::-webkit-scrollbar-button {
-    background-color: #15193867;
-    border: 1px solid black;
-    border-radius: 7px;
-}
-
 body::-webkit-scrollbar-track-piece {
     background-color: #191919;
 }
+
+
 @mixin flex($direction, $justify, $align, $gap) {
     display: flex;
     flex-direction: $direction;
@@ -25,23 +21,24 @@ body::-webkit-scrollbar-track-piece {
     align-items: $align;
     gap: $gap;
 }
-@mixin grid($display,$width, $align, $justify, $gap){
+
+@mixin grid($display, $width, $align, $justify, $gap) {
     display: grid;
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
-@mixin img($width, $height, $object){
+
+@mixin img($width, $height, $object) {
     width: $width;
     height: $height;
     object-fit: $object;
 }
 
-@mixin texto($size, $family, $align, $grosor, $color){
+@mixin texto($size, $family, $grosor, $color) {
     font-size: $size;
     font-family: $family;
-    text-align: $align;
     font-weight: $grosor;
-    color:$color;
+    color: $color;
 }
