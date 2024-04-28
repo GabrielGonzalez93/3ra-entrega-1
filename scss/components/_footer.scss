@@ -1,0 +1,19 @@
+footer {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+
+    .futer {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            padding-right: 10px;
+        }
+    }
+}

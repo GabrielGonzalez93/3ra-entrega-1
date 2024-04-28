@@ -1,0 +1,41 @@
+// scroll-bar
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #15193867;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-button {
+    background-color: #15193867;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-color: #191919;
+}
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin img($width, $height, $object){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+
+@mixin texto($size, $family, $align, $grosor, $color){
+    font-size: $size;
+    font-family: $family;
+    text-align: $align;
+    font-weight: $grosor;
+    color:$color;
+}
