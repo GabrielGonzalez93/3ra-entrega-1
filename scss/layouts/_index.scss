@@ -46,7 +46,7 @@ main {
 
     .hero-main {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
         padding: 20px;
@@ -55,8 +55,8 @@ main {
 
         div {
             @include flex(column, center, center, 10px);
-            display: flex;
             transition: 0.5s;
+            
         }
 
         img {
