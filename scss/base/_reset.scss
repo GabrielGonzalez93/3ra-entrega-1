@@ -10,15 +10,15 @@ body {
     font-size: medium;
     
     h1 {
-        color:white;
+        color:$color-primary;
         font-size: xx-large;
     }
 
     h2 {
-        color: white;
+        color: $color-primary
     }
 
     p {
-        color: white;
+        color: $color-primary;
     }
 }

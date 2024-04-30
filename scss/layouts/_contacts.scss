@@ -1,8 +1,7 @@
 .contacts {
-    background-image: url(../images/idconcert2.png);
+    background-image: url(../../images/idconcert2.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-size: cover;    
 
     .formulario {
         @include grid(grid, 100%, center, center, 10px);
@@ -31,7 +30,7 @@
                 display: flex;
                 width: 100%;
                 padding: 10px;
-                border: 2px solid #ccc;
+                border: 2px solid $color-light;
                 font-size: 1rem;
                 border-radius: 18px;
                 resize: none;

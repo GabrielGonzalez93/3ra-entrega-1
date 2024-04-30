@@ -118,6 +118,17 @@ header {
     display: flex;
     flex-direction: column;
   }
+  main .hero-main img {
+    width: 500px;
+    height: 350px;
+    object-fit: contain;
+  }
+}
+@media (min-width: 992px) {
+  main .hero-main img {
+    width: 300px;
+    height: 250px;
+  }
 }
 @media (max-width: 890px) {
   .accordion {
@@ -374,10 +385,9 @@ main .hero-main img {
 }
 
 .contacts {
-  background-image: url(../images/idconcert2.png);
+  background-image: url(../../images/idconcert2.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 .contacts .formulario {
   display: grid;
@@ -408,7 +418,7 @@ main .hero-main img {
   display: flex;
   width: 100%;
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid rgba(193, 194, 167, 0.973);
   font-size: 1rem;
   border-radius: 18px;
   resize: none;
