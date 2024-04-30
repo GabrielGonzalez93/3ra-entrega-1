@@ -8,7 +8,7 @@
         h1 {
             font-size: 1.5rem;
             transition: 0.5s;
-            text-shadow: black;
+            text-shadow: $color-dark;
 
             &:hover {
                 transform: scale(1.4);
@@ -37,7 +37,7 @@
         align-items: center;
         padding: 10px;
         gap: 10px;
-        border: 2px solid #103ac411;
+        border: 2px solid $color-dark;
         border-radius: 30px;
     }
 

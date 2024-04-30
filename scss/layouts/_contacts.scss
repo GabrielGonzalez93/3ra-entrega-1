@@ -22,7 +22,7 @@
                 display: flex;
                 font-weight: bold;
                 margin-bottom: 5px;
-                color: #ffffff;
+                color: $color-nude;
             }
     
             input,
@@ -38,8 +38,8 @@
         }
     
         .btnformulario {
-            background-color: #333;
-            color: #fff;
+            background-color: $color-dark;
+            color: $color-nude;
             border: none;
             padding: 10px 20px;
             border-radius: 18px;
