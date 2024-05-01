@@ -20,15 +20,17 @@
 
 .musica {
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-        'disco1 disco2'
-        'disco3 disco4'
-        'disco5 disco6';
-    padding: 10px;
-    gap: 5px;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: auto;
+    // grid-template-areas:
+    //     'disco1 disco2'
+    //     'disco3 disco4'
+    //     'disco5 disco6';
+    // padding: 10px;
+    // gap: 5px;
+    display: flex;
+    flex-direction: column;
 
     .disc {
         display: flex;
