@@ -110,7 +110,7 @@ header {
 @media (max-width: 800px) {
   .musica {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 @media (max-width: 992px) {
