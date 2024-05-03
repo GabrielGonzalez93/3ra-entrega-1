@@ -3,22 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-image: linear-gradient(35deg, rgb(19, 19, 20), rgb(19, 19, 34));
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: medium;
-    
-    h1 {
-        color:$color-primary;
-        font-size: xx-large;
-    }
-
-    h2 {
-        color: $color-primary
-    }
-
-    p {
-        color: $color-primary;
-    }
-}
