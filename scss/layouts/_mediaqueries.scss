@@ -1,4 +1,3 @@
-// navbar
 @media (max-width:992px) {
     .navbar .offcanvas {
         align-items: normal;
@@ -18,7 +17,6 @@
     }
 }
 
-// mediaquieries de galeria
 @media (max-width:992px) {
     .galeria {
         display: flex;
@@ -39,8 +37,6 @@
     }
 }
 
-// musica
-
 @media (max-width:800px) {
     main .musica {
         display: flex;
@@ -49,7 +45,6 @@
     }
 }
 
-// index
 @media (max-width:992px) {
     main .hero-main {
         display: flex;
@@ -72,12 +67,25 @@
     }
 }
 
-// about
 @media (max-width:890px) {
     .accordion {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    header {
+        height: 120px;
+    }
+
+    .navegacion {
+        height: 100%;
+
+        ul {
+            display: none;
+        }
     }
 }

@@ -3,17 +3,18 @@
     padding: 20px;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     transition: 0.5s;
     flex-grow: 1;
 
-    ul{
+    ul {
         li {
             padding: 15px;
             list-style-type: none;
             text-decoration: none;
         }
     }
+
     .fotos {
         justify-content: center;
         align-items: center;
@@ -22,11 +23,11 @@
         flex-grow: 1;
         flex-basis: 320px;
         transition: 0.5s;
-    
+
         &:hover {
             flex-grow: 6;
         }
-    
+
         img {
             border: 2px solid rgb(49, 8, 8);
             width: 100%;
@@ -36,6 +37,7 @@
         }
     }
 }
+
 .i1 {
     grid-area: img1;
 }
@@ -66,16 +68,4 @@
 
 .i8 {
     grid-area: img8;
-}
-@media (min-width: 1000px) {
-    header {
-        height: 120px;
-    }
-
-    .navegacion {
-        height: 100%;
-        ul {
-            display: none;
-        }
-    }
 }
