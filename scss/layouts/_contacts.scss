@@ -21,7 +21,8 @@ body {
         .formulario {
             @include flex(row, center, center, 10px);
             flex-wrap: wrap;
-            iframe{
+
+            iframe {
                 width: 80%;
             }
 
@@ -54,7 +55,7 @@ body {
                     border-radius: 18px;
                     resize: none;
                 }
-                
+
             }
 
             .btnformulario {
