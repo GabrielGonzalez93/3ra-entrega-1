@@ -1,49 +1,70 @@
-.contacts {
-    background-image: url(../../images/idconcert2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
 
-    .formulario {
-        @include grid(grid, 100%, center, center, 10px);
+    h1 {
+        color: $color-primary;
+        font-size: xx-large;
+    }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            gap: 25px;
+    h2 {
+        color: $color-primary
+    }
 
-            div {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+    p {
+        color: $color-primary;
+    }
+
+    .contacts {
+        .formulario {
+            @include flex(row, center, center, 10px);
+            flex-wrap: wrap;
+            iframe{
+                width: 80%;
             }
 
-            label {
+            form {
                 display: flex;
-                font-weight: bold;
-                margin-bottom: 5px;
+                flex-direction: column;
+                width: 80%;
+                gap: 25px;
+
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                label {
+                    display: flex;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    color: $color-nude;
+                }
+
+                input,
+                textarea {
+                    display: flex;
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid $color-light;
+                    font-size: 1rem;
+                    border-radius: 18px;
+                    resize: none;
+                }
+                
+            }
+
+            .btnformulario {
+                background-color: $color-dark;
                 color: $color-nude;
-            }
-
-            input,
-            textarea {
-                display: flex;
-                width: 100%;
-                padding: 10px;
-                border: 2px solid $color-light;
-                font-size: 1rem;
+                border: none;
+                padding: 10px 20px;
                 border-radius: 18px;
-                resize: none;
+                font-size: 18px;
             }
-        }
-
-        .btnformulario {
-            background-color: $color-dark;
-            color: $color-nude;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 18px;
-            font-size: 18px;
         }
     }
 }

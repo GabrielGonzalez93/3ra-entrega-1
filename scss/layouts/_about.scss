@@ -1,49 +1,68 @@
-.abaut {
-    display: grid;
-    text-align: center;
-    background: radial-gradient(circle, black, rgba(8, 8, 58, 0.63));
+body {
+    background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
 
-    .historia {
-        display: flex;
-        vertical-align: top;
-        width: 100%;
-        background-color: #19191946;
+    h1 {
+        color: $color-primary;
+        font-size: xx-large;
+    }
 
-        article {
+    h2 {
+        color: $color-primary
+    }
+
+    p {
+        color: $color-primary;
+    }
+
+    .abaut {
+        display: grid;
+        text-align: center;
+
+        .historia {
+            display: flex;
+            vertical-align: top;
             width: 100%;
-            padding: 20px;
-            white-space: break-spaces;
-        }
+            background-color: #19191946;
 
-        p {
-            padding: 20px;
-            text-align: center;
+            article {
+                width: 100%;
+                padding: 20px;
+                white-space: break-spaces;
+            }
+
+            p {
+                padding: 20px;
+                text-align: center;
+            }
         }
     }
-}
 
-.accordion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    .accordion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
 
-    .accordion-button {
-        background-color: #191919;
-        font-weight: bold;
-        color: $color-nude;
-    }
+        .accordion-button {
+            background-color: #191919;
+            font-weight: bold;
+            color: $color-nude;
+        }
 
-    .accordion-item {
-        width: 189px;
-        background-color: #191919;
-        border: none;
-        color: $color-nude;
-        font-weight: bold;
-
-        img {
+        .accordion-item {
             width: 189px;
-            height: 300px;
+            background-color: #191919;
+            border: none;
+            color: $color-nude;
+            font-weight: bold;
+
+            img {
+                width: 189px;
+                height: 300px;
+            }
         }
     }
 }

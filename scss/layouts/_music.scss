@@ -1,80 +1,105 @@
-.titulomusic {
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+body {
+    background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
 
-        h1 {
-            font-size: 1.5rem;
-            transition: 0.5s;
-            text-shadow: $color-dark;
+    h1 {
+        color: $color-primary;
+        font-size: xx-large;
+    }
 
-            &:hover {
-                transform: scale(1.4);
-                background: linear-gradient(to right, rgb(19, 19, 39), rgb(1, 2, 48));
+    h2 {
+        color: $color-primary
+    }
+
+    p {
+        color: $color-primary;
+    }
+
+    .titulomusic {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 1.5rem;
+                transition: 0.5s;
+                text-shadow: $color-dark;
+
+                &:hover {
+                    transform: scale(1.4);
+                    background: linear-gradient(to right, rgba(11, 11, 31, 0.445), rgba(1, 2, 48, 0.322));
+                }
+            }
+            hr{
+                width: 100%;
+                height: 2px;
+                border-color: black;
             }
         }
     }
-}
 
-.musica {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .disc {
+    .musica {
         display: flex;
-        background: linear-gradient(55deg, black, rgba(3, 3, 71, 0.438));
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        gap: 10px;
-        border: 2px solid $color-dark;
-        border-radius: 30px;
-        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .disc {
+            display: flex;
+            background: linear-gradient(55deg, rgba(26, 5, 9, 0.466), rgba(60, 60, 102, 0.308));
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            border: 2px solid $color-dark;
+            border-radius: 30px;
+            width: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
-    }
 
-    .sp1 {
-        grid-area: disco1;
-    }
+        .sp1 {
+            grid-area: disco1;
+        }
 
-    .sp2 {
-        grid-area: disco2;
-    }
+        .sp2 {
+            grid-area: disco2;
+        }
 
-    .sp3 {
-        grid-area: disco3;
-    }
+        .sp3 {
+            grid-area: disco3;
+        }
 
-    .sp4 {
-        grid-area: disco4;
-    }
+        .sp4 {
+            grid-area: disco4;
+        }
 
-    .sp5 {
-        grid-area: disco5;
-    }
+        .sp5 {
+            grid-area: disco5;
+        }
 
-    .sp6 {
-        grid-area: disco6;
-    }
+        .sp6 {
+            grid-area: disco6;
+        }
 
-    .sp7 {
-        grid-area: disco7;
-    }
+        .sp7 {
+            grid-area: disco7;
+        }
 
-    .sp8 {
-        grid-area: disco8;
-    }
+        .sp8 {
+            grid-area: disco8;
+        }
 
-    .sp9 {
-        grid-area: disco9;
+        .sp9 {
+            grid-area: disco9;
+        }
     }
 }

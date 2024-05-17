@@ -18,26 +18,9 @@ body::-webkit-scrollbar-track-piece {
   background-color: #191919;
 }
 
-body {
-  background-image: linear-gradient(35deg, rgb(19, 19, 20), rgb(19, 19, 34));
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  font-size: medium;
-}
-body h1 {
-  color: white;
-  font-size: xx-large;
-}
-body h2 {
-  color: white;
-}
-body p {
-  color: white;
-}
-
 footer {
   width: 100%;
-  height: 25px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -166,31 +149,47 @@ header {
     display: none;
   }
 }
-main {
+body {
+  background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
+}
+body h1 {
+  color: white;
+  font-size: xx-large;
+}
+body h2 {
+  color: white;
+}
+body p {
+  color: white;
+}
+body main {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-main .carousel-item {
+body main .carousel-item {
   height: 100%;
   width: 100%;
 }
-main .carousel-item img {
+body main .carousel-item img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
-main .carousel-item .active {
+body main .carousel-item .active {
   width: 100%;
 }
-main .present {
+body main .present {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
 }
-main .present .title2 {
+body main .present .title2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,15 +199,15 @@ main .present .title2 {
   gap: 10px;
   transition: 1s;
 }
-main .present .title2 .titulo {
+body main .present .title2 .titulo {
   background-position: 0% 100%;
   background-size: 100% 0%;
   transition: background-size 0.5s;
 }
-main .present .title2:hover {
+body main .present .title2:hover {
   transform: scale(1.5);
 }
-main .hero-main {
+body main .hero-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +215,7 @@ main .hero-main {
   gap: 20px;
   width: 100%;
 }
-main .hero-main div {
+body main .hero-main div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,7 +223,7 @@ main .hero-main div {
   gap: 10px;
   transition: 0.5s;
 }
-main .hero-main img {
+body main .hero-main img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -233,51 +232,81 @@ main .hero-main img {
   overflow: hidden;
 }
 
-.abaut {
+body {
+  background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
+}
+body h1 {
+  color: white;
+  font-size: xx-large;
+}
+body h2 {
+  color: white;
+}
+body p {
+  color: white;
+}
+body .abaut {
   display: grid;
   text-align: center;
-  background: radial-gradient(circle, black, rgba(8, 8, 58, 0.63));
 }
-.abaut .historia {
+body .abaut .historia {
   display: flex;
   vertical-align: top;
   width: 100%;
   background-color: rgba(25, 25, 25, 0.2745098039);
 }
-.abaut .historia article {
+body .abaut .historia article {
   width: 100%;
   padding: 20px;
   white-space: break-spaces;
 }
-.abaut .historia p {
+body .abaut .historia p {
   padding: 20px;
   text-align: center;
 }
-
-.accordion {
+body .accordion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
 }
-.accordion .accordion-button {
+body .accordion .accordion-button {
   background-color: #191919;
   font-weight: bold;
   color: #faf4df;
 }
-.accordion .accordion-item {
+body .accordion .accordion-item {
   width: 189px;
   background-color: #191919;
   border: none;
   color: #faf4df;
   font-weight: bold;
 }
-.accordion .accordion-item img {
+body .accordion .accordion-item img {
   width: 189px;
   height: 300px;
 }
 
-.galeria {
+body {
+  background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
+}
+body h1 {
+  color: white;
+  font-size: xx-large;
+}
+body h2 {
+  color: white;
+}
+body p {
+  color: white;
+}
+body .galeria {
   display: flex;
   padding: 20px;
   gap: 20px;
@@ -286,12 +315,12 @@ main .hero-main img {
   transition: 0.5s;
   flex-grow: 1;
 }
-.galeria ul li {
+body .galeria ul li {
   padding: 15px;
   list-style-type: none;
   text-decoration: none;
 }
-.galeria .fotos {
+body .galeria .fotos {
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -300,73 +329,85 @@ main .hero-main img {
   flex-basis: 320px;
   transition: 0.5s;
 }
-.galeria .fotos:hover {
+body .galeria .fotos:hover {
   flex-grow: 6;
 }
-.galeria .fotos img {
+body .galeria .fotos img {
   border: 2px solid rgb(49, 8, 8);
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 25px;
 }
-
-.i1 {
+body .i1 {
   grid-area: img1;
 }
-
-.i2 {
+body .i2 {
   grid-area: img2;
 }
-
-.i3 {
+body .i3 {
   grid-area: img3;
 }
-
-.i4 {
+body .i4 {
   grid-area: img4;
 }
-
-.i5 {
+body .i5 {
   grid-area: img5;
 }
-
-.i6 {
+body .i6 {
   grid-area: img6;
 }
-
-.i7 {
+body .i7 {
   grid-area: img7;
 }
-
-.i8 {
+body .i8 {
   grid-area: img8;
 }
 
-.titulomusic div {
+body {
+  background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
+}
+body h1 {
+  color: white;
+  font-size: xx-large;
+}
+body h2 {
+  color: white;
+}
+body p {
+  color: white;
+}
+body .titulomusic div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.titulomusic div h1 {
+body .titulomusic div h1 {
   font-size: 1.5rem;
   transition: 0.5s;
   text-shadow: rgb(17, 5, 5);
 }
-.titulomusic div h1:hover {
+body .titulomusic div h1:hover {
   transform: scale(1.4);
-  background: linear-gradient(to right, rgb(19, 19, 39), rgb(1, 2, 48));
+  background: linear-gradient(to right, rgba(11, 11, 31, 0.445), rgba(1, 2, 48, 0.322));
 }
-
-.musica {
+body .titulomusic div hr {
+  width: 100%;
+  height: 2px;
+  border-color: black;
+}
+body .musica {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.musica .disc {
+body .musica .disc {
   display: flex;
-  background: linear-gradient(55deg, black, rgba(3, 3, 71, 0.438));
+  background: linear-gradient(55deg, rgba(26, 5, 9, 0.466), rgba(60, 60, 102, 0.308));
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -376,70 +417,85 @@ main .hero-main img {
   border-radius: 30px;
   width: 50%;
 }
-.musica .disc img {
+body .musica .disc img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.musica .sp1 {
+body .musica .sp1 {
   grid-area: disco1;
 }
-.musica .sp2 {
+body .musica .sp2 {
   grid-area: disco2;
 }
-.musica .sp3 {
+body .musica .sp3 {
   grid-area: disco3;
 }
-.musica .sp4 {
+body .musica .sp4 {
   grid-area: disco4;
 }
-.musica .sp5 {
+body .musica .sp5 {
   grid-area: disco5;
 }
-.musica .sp6 {
+body .musica .sp6 {
   grid-area: disco6;
 }
-.musica .sp7 {
+body .musica .sp7 {
   grid-area: disco7;
 }
-.musica .sp8 {
+body .musica .sp8 {
   grid-area: disco8;
 }
-.musica .sp9 {
+body .musica .sp9 {
   grid-area: disco9;
 }
 
-.contacts {
-  background-image: url(../../images/idconcert2.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+body {
+  background-image: linear-gradient(45deg, rgb(10, 25, 65), rgb(63, 9, 9));
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: medium;
 }
-.contacts .formulario {
-  display: grid;
-  width: 100%;
-  align-items: center;
+body h1 {
+  color: white;
+  font-size: xx-large;
+}
+body h2 {
+  color: white;
+}
+body p {
+  color: white;
+}
+body .contacts .formulario {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-.contacts .formulario form {
+body .contacts .formulario iframe {
+  width: 80%;
+}
+body .contacts .formulario form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   gap: 25px;
 }
-.contacts .formulario form div {
+body .contacts .formulario form div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.contacts .formulario form label {
+body .contacts .formulario form label {
   display: flex;
   font-weight: bold;
   margin-bottom: 5px;
   color: #faf4df;
 }
-.contacts .formulario form input,
-.contacts .formulario form textarea {
+body .contacts .formulario form input,
+body .contacts .formulario form textarea {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -448,7 +504,7 @@ main .hero-main img {
   border-radius: 18px;
   resize: none;
 }
-.contacts .formulario .btnformulario {
+body .contacts .formulario .btnformulario {
   background-color: rgb(17, 5, 5);
   color: #faf4df;
   border: none;
